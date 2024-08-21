@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "postgresql://postgres:nNOOSTbFVJzJtPYujQUZAzESKhxbDePN@postgres.railway.internal:5432/railway",
+    "DATABASE_PUBLIC_URL": "postgresql://postgres:nNOOSTbFVJzJtPYujQUZAzESKhxbDePN@autorack.proxy.rlwy.net:56635/railway",
+    "PGDATA": "/var/lib/postgresql/data/pgdata",
+    "PGDATABASE": "railway",
+    "PGHOST": "postgres.railway.internal",
+    "PGPASSWORD": "nNOOSTbFVJzJtPYujQUZAzESKhxbDePN",
+    "PGPORT": "5432",
+    "PGUSER": "postgres",
+    "POSTGRES_DB": "railway",
+    "POSTGRES_PASSWORD": "nNOOSTbFVJzJtPYujQUZAzESKhxbDePN",
+    "POSTGRES_USER": "postgres",
+    "SSL_CERT_DAYS": "820"
+  }
+}
+
